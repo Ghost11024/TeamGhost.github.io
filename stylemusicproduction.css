@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background-position: center;
+    background-size: cover;
+    transition: 2s;
+    filter: blur(40px);
+    opacity: 0;
+    animation: hi1 0.5s 1s linear 1 forwards;
+    overflow: hidden;
+    background: rgba(207, 191, 191, 0.333);
+}
+
+@keyframes hi1{
+    to{
+        opacity: 1;
+        filter: blur(0);
+        background: none;
+    }
+}
+
+
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 100px;
+    z-index: 10;
+}
+
+.logo{
+    font-size: 25px;
+    color: #fff;
+    letter-spacing: 1px;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.logo:hover{
+    color: #1382c2;
+}
+
+
+.nav{
+    display: flex;
+}
+
+.nav li{
+    list-style: none;
+    margin: 0 10px;
+}
+
+.nav li a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.nav li:hover a{
+    color: #ff3700;
+}
+
+.search{
+    position: relative;
+    width: 300px;
+    height: 40px;
+}
+
+.search input{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    outline: none;
+    border-radius: 20px;
+    padding: 0 10px 0 45px !important;
+    backdrop-filter: blur(10px);
+}
+
+.search input::placeholder{
+    color: #fff;
+}
+
+.search ion-icon{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10px;
+    padding-right: 10px;
+    color: #fff;
+    border-right: 1px solid #fff;
+    cursor: pointer;
+}
+
+.search ion-icon:hover{
+    color: #1339a4;
+}
+
+
+.cover
+{
+    position: fixed;
+    top: 12%;
+    left: 15%;
+    width: 75vw;
+    height: 85vh;
+    background-color: rgba(255, 255, 255, 0.333);
+    backdrop-filter: blur(7px);
+    box-shadow: 0 .4rem .8rem #0005;
+    border-radius: .8rem;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.cover h1{
+    color:  rgba(184, 178, 178, 0.623);
+    text-decoration: overline;
+}
+.cover h1:hover{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.coverheader
+{   
+    align-items: center;
+    width: 100%;
+    height: 5%;
+    background-color: rgba(255, 249, 249, 0.915);
+    background: transparent;
+    padding: .8rem 1rem;
+    border-radius: 10px;
+}
+
+
+.coverheader1{
+    position: absolute;
+    top: 10%;
+    align-items: center;
+    width: 110%;
+    height: 7%;
+    background-color:  rgba(207, 191, 191, 0.333);
+}
+
+.coverheader1 h2{
+    position: absolute;
+    top: 19%;
+    font-size: 19px;
+}
+
+
+.cover ul{
+    padding: 40px;
+    position: relative;
+    top: 8%;
+    left: 20%;
+    line-height: 30px;
+}
+.cover .afterul{
+    position: absolute;
+    top: 60%;
+    background-color: rgba(197, 195, 195, 0.685);
+    border: 1px solid rgba(197, 195, 195, 0.685);
+    border-radius: 30px;
+}
+
+.cover .afterul ol{
+    padding: 40px;
+    letter-spacing: 1px;
+    line-height: 30px;
+}
+
+
+.cover .afterul h1{
+    position: relative;
+    top: 10%;
+    left: 30%;
+    color: rgba(6, 5, 5, 0.379);
+}
+
+
+
+
+.cover .afterul ul{
+    position: relative;
+    left: 7%;
+}
+
+.cover .afterul  ol img{
+    border: 5px solid rgba(197, 195, 195, 0.685);
+    border-radius: 20px;
+    position: relative;
+}
+
+.cover .afterul ol .button1{
+    border: 2px solid rgba(255, 255, 255, 0.333);
+    border-radius: 10px;
+    background: #d8d0d0;
+    width: 150px;
+    height: 50px;
+    position: absolute;
+    top: 80%;
+    left: 25%;
+}
+
+.cover .afterul ol .button1 a{
+    text-decoration: none;
+    position: absolute;
+    left: 15%;
+    top: 27%;
+    color: rgba(46, 45, 45, 0.844);
+}
+
+.cover .afterul ol .button1:hover{
+    background: rgba(207, 191, 191, 0.333);
+}
+
+.cover .afterul ol .button1 a:hover{
+    color: rgba(90, 68, 68, 0.837);
+}
+
+.cover::-webkit-scrollbar
+{
+    width: 0.5rem;
+    height: 0.5rem;
+}
+
+.cover::-webkit-scrollbar-thumb
+{
+    border-radius: .5rem;
+    background: #0004;
+    visibility: hidden;
+}
+
+.cover:hover::-webkit-scrollbar-thumb
+{
+    visibility: visible;
+}
+
+
+
+.banner{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    min-height: 100vh;
+    padding: 0 100px;
+    justify-content: space-between;
+    align-items: center;
+    background: url(16.jpg) no-repeat;
+    background-position: center;
+}
+
+
+
+
+.banner::before{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}

@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+* 
+ {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+ }
+
+ body
+ {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  
+
+ }
+
+
+ 
+ header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 100px;
+    z-index: 10;
+}
+
+.logo{
+    font-size: 25px;
+    color: #fff;
+    letter-spacing: 1px;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.logo:hover{
+    color: #1382c2;
+}
+
+.nav{
+    display: flex;
+}
+
+.nav li{
+    list-style: none;
+    margin: 0 10px;
+}
+
+.nav li a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.nav li:hover a{
+    color: #ff3700;
+}
+
+.nav li:hover:nth-child(3){
+    text-decoration: underline;
+    color: #ff3700;
+}
+
+
+
+
+.search{
+    position: relative;
+    width: 300px;
+    height: 40px;
+}
+
+.search input{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    outline: none;
+    border-radius: 20px;
+    padding: 0 10px 0 45px !important;
+    backdrop-filter: blur(10px);
+}
+
+.search input::placeholder{
+    color: #fff;
+}
+
+.search ion-icon{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10px;
+    padding-right: 10px;
+    color: #fff;
+    border-right: 1px solid #fff;
+    cursor: pointer;
+}
+.search ion-icon:hover{
+    color: #1339a4;
+}
+
+.banner{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    min-height: 100vh;
+    padding: 0 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(a1.jpg);
+    background-position: center;
+}
+
+
+
+.banner::before{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+
+
+
+
+
+/*Content*/
+
+.h12{
+    font-family: 'Montserrat', sans-serif;
+    position: absolute;
+    top: 15%;
+    align-items: center;
+}
+
+.h21{
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    top: 60%;
+    right: 40%;
+}
+
+
+.p12{
+    position: absolute;
+    top: 20%;
+    align-items: center;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 0.3px;
+    margin: 20px 0;
+}
+
+.h21 .p13{
+    position: absolute;
+    top: 85%;
+    justify-content: center;
+    right: 18%;
+    font-size: 15px;
+    letter-spacing: 0.3px;
+    line-height: 20px;
+    align-items: center;
+    font-size: small;
+    text-decoration: none;
+}
+
+.banner .carousel-box {
+    position: relative;
+    top: 15%;
+    min-width: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.2);
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 50px;
+}
+
+.carousel{
+    position: relative;
+    height: 500px;
+    perspective: 1500px;
+}
+
+.carousel  h2{
+    position: relative;
+    top: 10%;
+    left: 10%;
+    color: #8b92878c;
+    cursor: pointer;
+    transition: 5s;
+}
+
+.carousel  h2:hover{
+    text-decoration: underline;
+    transition: 10s;
+}
+
+.carousel  li {
+    position: relative;
+    top: 10%;
+    color: #615f5fdc;
+    transition: 10s;
+}
+
+
+.carousel ol {
+    position: relative;
+    top: 20%;
+}
+
+
+
+@media screen and (max-width:360px) {
+    header{
+       width: 650px;
+       font-size: 0.4em;
+       padding: 5px;
+    }
+     body{
+        height: 640px;
+        width: 360px;
+        overflow: hidden;
+     }
+    .search{
+     visibility: hidden;
+    }
+    .logo{
+     font-size: 0.6em;
+ 
+    }
+    
+    .banner{
+     width: 360px;
+     height: 640px;
+     position: relative;
+     
+    }
+    .banner .h12{ 
+        font-size: 1.5em;
+    }
+    .banner .p12{
+        font-size: 0.8em;
+    }
+
+
+.banner .carousel-box{
+    position: relative;
+    top: 70%;
+    min-width: 360px;
+ 
+ }
+ 
+.banner .carousel{
+    position: relative;
+  
+ }
+    
+ }

@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+   
+    transition: 2s;
+    filter: blur(20px);
+    opacity: 0;
+    animation: hi1 0.5s 1s linear 1 forwards;
+    overflow: hidden;
+}
+
+@keyframes hi1{
+    to{
+        opacity: 1;
+        filter: blur(0);
+    }
+}
+
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 100px;
+    z-index: 10;
+}
+
+.logo{
+    font-size: 25px;
+    color: #fff;
+    letter-spacing: 1px;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.logo:hover{
+    color: #1382c2;
+}
+
+
+.nav{
+    display: flex;
+}
+
+.nav li{
+    list-style: none;
+    margin: 0 10px;
+}
+
+.nav li a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.nav li:hover a{
+    color: #ff3700;
+}
+
+.banner{
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    background: url(a3.jpg) no-repeat;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+.banner::before{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.banner .contact{
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-size: cover;
+    background-position: center;
+}
+
+.banner .contact .content{
+    max-width: 800px;
+    text-align: center;
+    position: absolute;
+    top: 10%;
+}
+
+.banner .contact .content h2{
+    font-size: 36px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.banner .contact .content p{
+    font-size: 17px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.banner .container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.banner .container .contactinfo{
+    width: 140%;
+    display: flex;
+    flex-direction: column;
+}
+
+.banner .container .contactinfo .box{
+    width: 60%;
+    position: relative;
+    padding: 10px 0;
+    display: flex;
+    border: 1px solid #000;
+    border-radius: 50px;
+}
+
+
+
+
+.banner .container .contactinfo .box:hover{
+    cursor: pointer;
+    backdrop-filter: blur(40px);
+}
+.banner .container .contactinfo .box .text:hover{
+    color: #b93737;
+}
+
+.container .contactinfo .box .icon{
+    min-width: 60px;
+    height: 60px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+.container .contactinfo .box .text{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #fff;
+    flex-direction: column;
+    font-weight: 300;
+}
+
+.container .contactinfo .box .text h3{
+    font-weight: 500;
+    color: #00bcd4;
+}
+
+.contactform{
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    border: 2px solid #ff994f;
+    border-radius: 30px;
+    background: url(right_img.png);
+    background: linear-gradient(#ffc940fc, #ffd53d, #edc8c8);
+    background-size: cover;
+    backdrop-filter: blur(5px);
+    opacity: 1;
+}
+
+
+.contact form{
+    padding: 30px;
+}
+
+.contactform h2{
+    font-weight: 600;
+    color: #ba8507;
+    font-size: 30px;
+  
+}
+
+.contactform hr{
+    border: none;
+    width: 120px;
+    height: 5px;
+    background-color: #ae6f11;
+    border-radius: 30px;
+    margin-bottom: 20px;
+}
+
+.contactform input{
+    width: 400px;
+    padding: 30px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding-left: 30px;
+    font-weight: 500;
+    color: #666;
+    gap: 30px;
+    border-radius: 50px;
+}
+
+.contactform  textarea{
+    height: 140px;
+    width: 400px;
+    padding-top: 15px;
+    border-radius: 10px;
+}
+
+.contactform  input:focus{
+    border: 2px solid #ff994f;
+}
+
+.contactform  input::placeholder{
+    color: #a9a9a9;
+}
+
+
+.contactform  button{
+    display: flex;
+    position: relative;
+    top: 1%;
+    align-items: center;
+    padding: 15px 30px;
+    font-size: 16px;
+    color: #fff;
+    gap: 10px;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(270deg, #ff994f, #fa6d86);
+    cursor: pointer;
+}
+
+.sci{
+    position: absolute;
+    top: 70%;
+    bottom: 50px;
+    right:100px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    list-style: none;
+}
+
+
+.sci li a{
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: 25px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+
+.sci li a .echo:hover{
+    color: rgba(255, 0, 0, 0.67);
+}
+
+.sci li a .alpha:hover{
+    color: rgba(20, 36, 219, 0.67);
+}
+
+.sci li a .bravo:hover{
+    color: rgba(24, 179, 240, 0.67);
+}
+
+.sci li a .siyera:hover{
+    color: rgba(60, 233, 77, 0.67);
+}
